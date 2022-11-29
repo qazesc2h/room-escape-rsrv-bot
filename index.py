@@ -1,8 +1,7 @@
 from SlackAPI import SlackAPI
+from os import environ
 
-OAUTH_TOKEN = 'xoxb-4431164721781-4434055825491-Vc3y99FSGAEwUw6MHI9tqk3l'
-
-slack = SlackAPI(OAUTH_TOKEN)
+slack = SlackAPI(environ['OAUTH_TOKEN'])
 
 channel_name = "bot-alarm"
 query = "!"
